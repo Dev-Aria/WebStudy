@@ -1,0 +1,20 @@
+package polymorphism;
+
+public class TVUser {
+
+	public static void main(String[] args) {
+		System.out.println("Samsung TV");
+		SamsungTV stv = new SamsungTV();
+		stv.powerOn();
+		stv.volumeUp();
+		stv.volumeDown();
+		stv.powerOff();
+
+		System.out.println("Lg TV");
+		LgTV ltv = new LgTV();
+		ltv.turnOn();
+		ltv.turnOff();
+		ltv.volumeDown();
+		ltv.powerOff();
+	}
+}

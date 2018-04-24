@@ -1,0 +1,17 @@
+package polymorphism;
+
+public class TVUser {
+
+	public static void main(String[] args) {
+		/*
+		BeanFactory factory = new BeanFactory();
+		TV tv = (TV)factory.getBean(args[0]);
+		tv.powerOn();
+		tv.volumeUp();
+		tv.volumeDown();
+		tv.powerOff();
+		*/
+		
+		//1.Spring 컨테이너를 구동한다.
+	}
+}
