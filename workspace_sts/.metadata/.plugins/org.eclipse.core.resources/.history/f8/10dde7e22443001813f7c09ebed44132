@@ -1,7 +1,0 @@
-package com.springbook.biz;
-
-import javax.servlet.http.HttpServlet;
-
-public class HelloServlet extends HttpServlet{
-	
-}

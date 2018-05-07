@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BoardWeb/src/main/java/com/springbook/view/board/UpdateBoardController2.java&apos; to &apos;UpdateBoardController.java&apos;" description="Rename resource &apos;UpdateBoardController2.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/springbook/view/board/UpdateBoardController2.java" name="UpdateBoardController.java" stamp="1525615093189" updateReferences="true"/>
+</session>
