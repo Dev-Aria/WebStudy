@@ -1,6 +1,7 @@
 package com.springbook.view.controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -11,13 +12,14 @@ public class DispatcherServlet extends HttpServlet {
 	private HandlerMapping handlerMapping;
 	private ViewResolver viewResolver;
 	
+	// 클라이언트 요청으로  DispatcherServlet 객체가 생성되고 나면  XmlWebApplicaitionContext라는 스프링 컨테이너 구동
 	public void init() throws ServletException {
 		handlerMapping = new HandlerMapping();
 		viewResolver = new ViewResolver();
 		viewResolver.setPrefix("./");
 		viewResolver.setSuffix(".jsp");
 	}
-     
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		process(request, response);
@@ -54,5 +56,6 @@ public class DispatcherServlet extends HttpServlet {
 		
 		// 5. 검색된 화면으로 이동한다.
 		response.sendRedirect(view);	
-	}	
+	}
+
 }
